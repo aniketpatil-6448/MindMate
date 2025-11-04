@@ -35,6 +35,7 @@ function SignUp() {
         } 
         catch (error) {
             console.log(error)
+            console.log("MindMate")
             setLoading(false)
             toast.error(error.response.data.message)
         }
