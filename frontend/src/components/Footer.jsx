@@ -11,7 +11,7 @@ const Footer = () => {
         {/* Logo + Description */}
         <div className="lg:w-[40%] md:w-[50%] w-[100%]">
           <img src={logo} alt="Logo" className="h-15 mb-4 border-1 rounded-[5px]" />
-          <h2 className="text-xl font-bold text-white mb-3">Mind Mate - <h4 className=" text-white mb-3">where questions meet smart solutions.</h4></h2>
+          <h2 className="text-xl font-bold text-white mb-3">Mind Mate - <h4 className=" text-white mb-3">AI Powered LMS.</h4></h2>
           <p className="text-sm">
             AI-powered learning platform to help you grow smarter. Learn anything, anytime, anywhere.
           </p>
