@@ -26,7 +26,7 @@ function SignUp() {
     const handleSignUp = async () => {
         setLoading(true)
         try {
-            const result = await axios.post(serverUrl + "/api/auth/signup" , {name , email , password , role} , {withCredentials:true} )
+            const result = await axios.post("https://mindmate-1-scqp.onrender.com" + "/api/auth/signup" , {name , email , password , role} , {withCredentials:true} )
             dispatch(setUserData(result.data))
 
             navigate("/")
