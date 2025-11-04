@@ -2,7 +2,7 @@ import React from 'react'
 import { Navigate, Route, Routes } from 'react-router-dom'
 import Home from './pages/Home'
 import Login from './pages/Login'
-export const serverURL = "https://mindmate-ypui.onrender.com"
+export const serverURL = "https://mindmate-ai-powered-lms.onrender.com"
 import SignUp from './pages/SignUp'
 import { ToastContainer} from 'react-toastify';
 import ForgotPassword from './pages/ForgotPassword'
