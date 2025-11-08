@@ -2,6 +2,7 @@ import React from 'react'
 import { Navigate, Route, Routes } from 'react-router-dom'
 import Home from './pages/Home'
 import Login from './pages/Login'
+export const serverURL = "https://mindmate-ai-powered-lms.onrender.com"
 import SignUp from './pages/SignUp'
 import { ToastContainer} from 'react-toastify';
 import ForgotPassword from './pages/ForgotPassword'
@@ -27,7 +28,7 @@ import SearchWithAi from './pages/SearchWithAi'
 import getAllReviews from './customHooks/getAllReviews'
 import ChatSidebar from './components/ChatSidebar'
 
-export const serverUrl = "http://localhost:8000"
+export const serverUrl = "https://mindmate-1-scqp.onrender.com"
 
 function App() {
   
