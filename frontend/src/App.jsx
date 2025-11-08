@@ -25,6 +25,7 @@ import EnrolledCourse from './pages/EnrolledCourse'
 import ViewLecture from './pages/ViewLecture'
 import SearchWithAi from './pages/SearchWithAi'
 import getAllReviews from './customHooks/getAllReviews'
+import ChatSidebar from './components/ChatSidebar'
 
 export const serverUrl = "http://localhost:8000"
 
@@ -41,6 +42,7 @@ function App() {
     
       <ToastContainer />
       <ScrollToTop/>
+      <ChatSidebar />
       <Routes>
         <Route path='/' element={<Home/>}/>
         <Route path='/login' element={<Login/>}/>

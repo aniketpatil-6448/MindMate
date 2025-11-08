@@ -32,7 +32,9 @@ app.get("/" , (req,res)=>{
 })
 
 app.listen(port , ()=>{
-    console.log("Server Started")
+    console.log(`Server Started on port ${port}`)
     connectDb()
+}).on('error', (err) => {
+    console.error('Server error:', err)
 })
 

@@ -16,6 +16,24 @@ function ViewLecture() {
   const navigate = useNavigate()
   const courseCreator = userData?._id === selectedCourse?.creator ? userData : null;
 
+  // Persist current lecture info so the global chat can be lecture-aware
+  useEffect(() => {
+    if (selectedLecture) {
+      try {
+        localStorage.setItem('currentLectureCourseId', courseId)
+        localStorage.setItem('currentLectureId', selectedLecture._id || '')
+        localStorage.setItem('currentLectureTitle', selectedLecture.lectureTitle || '')
+      } catch (e) {}
+    }
+    return () => {
+      try {
+        localStorage.removeItem('currentLectureCourseId')
+        localStorage.removeItem('currentLectureId')
+        localStorage.removeItem('currentLectureTitle')
+      } catch (e) {}
+    }
+  }, [selectedLecture, courseId])
+
 
   return (
     <div className="min-h-screen bg-gray-50 p-6 flex flex-col md:flex-row gap-6">
